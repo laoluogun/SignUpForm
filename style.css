@@ -1,5 +1,9 @@
-@import "/node_modules/normalize.css/normalize.css";
-
+/*Removed normalize.css*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 
 @font-face {
     font-family: 'poppinsregular';
@@ -32,4 +36,40 @@
     font-weight: normal;
     font-style: normal;
 
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.subcontainer {
+    overflow: hidden;
+}
+
+#left {
+    height: 100%;
+    flex: 2;
+}
+#right {
+    height: 100%;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+#leaves {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subsections {
+    flex: auto;
+    background-color: rgb(219, 219, 219);
+}
+
+#subSec2 {
+    background-color: white;
 }

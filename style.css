@@ -2,13 +2,14 @@
 * {
     padding: 0px;
     margin: 0px;
+    line-height: 1.5em;
     box-sizing: border-box;
 }
 
 @font-face {
     font-family: 'poppinsregular';
-    src: url('poppins-regular-webfont.woff2') format('woff2'),
-         url('poppins-regular-webfont.woff') format('woff');
+    src: url('fonts/webfontkit-20240829-172854/poppins-regular-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit-20240829-172854/poppins-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -19,8 +20,8 @@
 
 @font-face {
     font-family: 'quicksandregular';
-    src: url('quicksand-regular-webfont.woff2') format('woff2'),
-         url('quicksand-regular-webfont.woff') format('woff');
+    src: url('fonts/webfontkit-20240829-172854/quicksand-regular-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit-20240829-172854/quicksand-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -31,11 +32,16 @@
 
 @font-face {
     font-family: 'poppinsblack';
-    src: url('poppins-black-webfont.woff2') format('woff2'),
-         url('poppins-black-webfont.woff') format('woff');
+    src: url('fonts/webfontkit-20240829-172854/poppins-black-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit-20240829-172854/poppins-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
+}
+
+body {
+    font-size: 36px;
+    font-family: "poppinsregular";
 }
 
 .container {
@@ -67,9 +73,20 @@
 
 .subsections {
     flex: auto;
+    font-family: poppinsregular;
     background-color: rgb(219, 219, 219);
 }
 
 #subSec2 {
     background-color: white;
+}
+
+#subSec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textContainer {
+    width: 80%;
 }

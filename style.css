@@ -1,9 +1,12 @@
 /*Removed normalize.css*/
-* {
+:root {
     padding: 0px;
     margin: 0px;
     line-height: 1.5em;
     box-sizing: border-box;
+    --main-color: purple;
+    --secondary-color: black;
+    --tertiary-color: white;
 }
 
 @font-face {
